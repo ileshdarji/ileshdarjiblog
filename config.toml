@@ -1,0 +1,97 @@
+baseURL = "https://ileshdarji.com"
+languageCode = "en-us"
+theme = "Hugo-Octopress"
+
+title = "{id} Ilesh Darji's Blog"
+
+# Number of blog posts in each pagination page
+paginate = 6
+
+disqusShortname = "ilesh_darji"
+
+[permalinks]
+post = "/blog/:year-:month-:day-:title/" # change the post URL to look like the old ones
+
+[params]
+
+# --- Start sidebar options ---
+# Number of last posts that will be displayed in the sidebar - set to 0 or remove to hide this section
+sidebarRecentLimit = 0
+
+# Sidebar header - passed to markdownify so you can write markdown here
+sidebarHeader = "Connect with me"
+
+# Sidebar text also supports markdown
+# New lines can be added with two spaces at the end of line. New paragraphs can be added with two an empty line.
+# when adding two new lines, remember to remove the indentation otherwise the new line will be treated as a codeblock
+# sidebarText = """Here's a [link to example.net](https://www.example.net)
+
+#   New paragraph
+
+#   Another paragraph which has two spaces in the end to create a new line using markdown  
+#   New line but not a new paragraph
+#   """
+# Sidebar menu - if true will add a sidebar menu between sidebar text and recent posts
+sidebarMenuEnabled = false
+sidebarMenuHeader = "Sidebar Links"
+
+# sidebar links
+github = "https://github.com/ileshdarji"
+linkedin = "https://www.linkedin.com/in/ilesh-darji-25179713/"
+twitter = "https://twitter.com/ileshdarji"
+
+# --- End sidebar options ---
+
+# If false, all of blog post will appear on front page (and in pagination)
+truncate = false
+
+# Author's name (appears in meta tags and under posts)
+author = "Ilesh Darji"
+
+# Search engine URL
+searchEngineURL = "https://www.google.com/search"
+
+# Text of the "Continue Reading" label. Supports markdown and inline HTML.
+# For example, &rarr; == right arrow.
+continueReadingText = "Read more &rarr;"
+
+# Switch to true to enable RSS icon link
+# rss = true
+
+# Website's default description
+description = "Ilesh Darji's blog"
+
+# 404.html header and text - both support markdown
+notFoundHeader = "There's nothing here"
+
+# Set to true to hide ReadingTime on posts
+disableReadingTime = false
+
+# Set to true to disable downloading of remote Google fonts
+disableGoogleFonts = false
+
+# Generate taxonomy pages
+generateTaxonomyList = true
+
+# Menu
+# If navigationNewWindow (under [params]) is set to true then all links except root ("/") will open in a new window
+# If it does not exist or is set to false then links will open in the same window
+[[menu.main]]
+Name = "About me"
+URL = "/about/"
+weight = -10
+
+# Sidebar menus
+# Enable with "sidebarMenuEnabled = true" under [params]
+# Header text is "sidebarMenuHeader" under [params]
+[[menu.sidebar]]
+Name = "example.net"
+URL = "https://www.example.net"
+weight = 0
+
+[markup]
+[markup.tableOfContents]
+endLevel = 8
+startLevel = 1
+[markup.highlight]
+style = "solarized-dark"
